@@ -1,0 +1,184 @@
+Name: Retentivity
+Id: g=41dd334259a5ac0a8c1923383847661e
+Type: FolderType
+Children:
+- Name: RetentivityStorage
+  Id: g=24cf4d0865474315561d826c4f085329
+  Type: RetentivityStorage
+  Children:
+  - Name: Nodes
+    Id: g=92db9347de23ef3343835e5fa457d406
+    Type: BaseObjectType
+    Children:
+    - Name: ns=26;SpindlesCount
+      Id: g=d662b9790e21839b97621215b2c0db77
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"0c8af66dee309a84d96d79bb84deb4db","Namespace":29}
+      Children:
+      - Name: Kind
+        Id: g=e165c661af8badd8998b1d3a2fb156a5
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: NodeClass
+        Id: g=584fd7d24352445bc54713d2c25d5d14
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: ns=26;Translations
+      Id: g=46979ec296ac1fb21536b97759abe5b8
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"47cf13665a94a8529c0efc74d1500a83","Namespace":29}
+      Children:
+      - Name: Kind
+        Id: g=7d981fb4d585dbacdd5d042a99ce685b
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: NodeClass
+        Id: g=39adac21cbd0d0e5ff20d6cc36ea3158
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: ns=26;Stylesheet
+      Id: g=94480399fd2415407198d451ba89285d
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"bb7a6a25117cdc29840e3eb8f3a7f1d6","Namespace":29}
+      Children:
+      - Name: Kind
+        Id: g=30f1db8f5af00f81bec46e78d621fdcc
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: NodeClass
+        Id: g=5386e424311991809130055d2454cc5b
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: ns=26;Users
+      Id: g=ae044084b9cab46662b1c6bb7cb619a5
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"b3c4b088edaa41b9a7c80e3bf52f6216","Namespace":29}
+      Children:
+      - Name: Kind
+        Id: g=21954159bc1129d0c03f8e5bce7e2069
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: NodeClass
+        Id: g=475ff67090d87d99dfec6188b8ddde1b
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: ns=26;ReadOnlyUI
+      Id: g=2fc9064bc85b8847b34e5b97e9e74d2a
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"66b094a179be9ad296562dcb0687d7fa","Namespace":29}
+      Children:
+      - Name: Kind
+        Id: g=fa1f0fc9a595e91753629710ee2721ae
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: NodeClass
+        Id: g=3b87f6b92f4958bf29f87300e9aba8b7
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: ns=26;SlabStrips
+      Id: g=b8234a0c4c083f0f6f7f833f289683c1
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"0f4a03e6ba8efc70ff3ebef565388eca","Namespace":29}
+      Children:
+      - Name: Kind
+        Id: g=91e754d1a88a773c9fec3bb0a2a3e10d
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: NodeClass
+        Id: g=b3ea3f4694426f9aecc65351c303129d
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: ns=26;Overview
+      Id: g=3013d6addf3edce6e13d8805313d7fe2
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"f36d517721d003937fde0138a9260b04","Namespace":29}
+      Children:
+      - Name: Kind
+        Id: g=9e6f63892a2f666b4ac185069a1dcaf6
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: NodeClass
+        Id: g=e8f8f2561db007d54e82f6705840ec9f
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: ns=26;Spindles
+      Id: g=c6c0660076011718934ab68be7dcb66f
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"843c66b5f8d6fbb64f08386f460a3be8","Namespace":29}
+      Children:
+      - Name: Kind
+        Id: g=e1804dc1dd355588fe541baad133fbe2
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: NodeClass
+        Id: g=45029e56c7adeed44e185748ba02f608
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: ns=26;Configuration
+      Id: g=b2ea841b08476d8da17f663d4a37f48f
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"0c0f4452e27a77df25e7eda828221a94","Namespace":29}
+      Children:
+      - Name: Kind
+        Id: g=7f5f6d77447fd98c0da60e6bb94dffd3
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: NodeClass
+        Id: g=7d31b6535b0a55abc273271e4bd428c8
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: ns=26;TrendPanel
+      Id: g=f91234f6c824c59a38a0a29d3804df92
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"9b7eb9834ba40e70c42a7c0bcb70f3d5","Namespace":29}
+      Children:
+      - Name: Kind
+        Id: g=f20e5ed8f8992981f02f41a601f0c901
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: NodeClass
+        Id: g=de6e6e1b648b64027e7b4a911cbbc976
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+  - Name: WriteDelay
+    Id: g=24b53a4328aee4c56e3f19e169ca2576
+    Type: BaseDataVariableType
+    DataType: Duration
+    ReferenceType: HasProperty
+    Value: "0:00:00:0.0000000"
+  - Name: DeltaObserverEnabled
+    Id: g=a9581fa800ffef9756d2ecd1bc8a48ff
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ReferenceType: HasProperty
+    Value: true

@@ -1,0 +1,327 @@
+Name: DataStores
+Id: g=96f4853983da1fabbf2a0f19ac7e9e89
+Type: FolderType
+Children:
+- Name: EmbeddedDatabase1
+  Id: g=573b6963b7d997f50be96c1112f0206c
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Id: g=e19750aed29d85136e8bcfa1181af850
+    Type: BaseObjectType
+    Children:
+    - Name: AlarmsEventLogger
+      Id: g=228f6d85ac4e7bcd7688d2e864db9110
+      Type: SQLiteStoreTable
+      Children:
+      - Name: Columns
+        Id: g=18ec86cc29cc5b83e6b562f601dac24c
+        Type: BaseObjectType
+        Children:
+        - Name: ActiveState_Id
+          Id: g=96d4a00bd34b8500a610234365f74bdf
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: AckedState_Id
+          Id: g=dffd1fc8a06377b0ac748279650de7d6
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: ConfirmedState_Id
+          Id: g=e6e05a11af2d79373af254fc2df6ca40
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: ConditionName
+          Id: g=8f23b035766603184f5ccb25fbf9d13b
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: EnabledState_Id
+          Id: g=272c71b5c395dff7be38028d9334e882
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: SourceName
+          Id: g=15cbc2bba92de558607aa2764cbf1f00
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Time
+          Id: g=9ca21310a723364fc445bba676946a0c
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: 'Message_it-IT'
+          Id: g=2c5df5e560c9a93e64058d66e04a125d
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: 'Message_en-US'
+          Id: g=d1a4780952fb2ac59439652ff7ed0f5f
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Severity
+          Id: g=0ad34b68f7b9518f66076e93c8f48f03
+          Type: StoreColumn
+          DataType: UInt16
+          Value: 0
+      - Class: Reference
+        Target: ns=19;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=20
+        Direction: Forward
+    - Name: RecipeSchema1
+      Id: g=bec1df908a11cde695f0961efa270ad8
+      Type: SQLiteStoreTable
+      Children:
+      - Name: Columns
+        Id: g=fc44841ba85ef04cf369b40d6dad0c2f
+        Type: BaseObjectType
+        Children:
+        - Name: Name
+          Id: g=9f7be0d987850f2deecce3b66af410ad
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: /FontPixelSize
+          Id: g=6143acd076676b7b73eebb17a4cb0a5a
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: /AccentColor
+          Id: g=cf37d32dc6c7a706890444d6ae776822
+          Type: StoreColumn
+          DataType: Color
+          Value: "#00000000"
+        - Name: /AccentTextColor
+          Id: g=143a501e9fb09abd866855d216a700fe
+          Type: StoreColumn
+          DataType: Color
+          Value: "#00000000"
+        - Name: /DataInputBackgroundColor
+          Id: g=2865d0f21125eaeaf1944c6cfc2fc6f5
+          Type: StoreColumn
+          DataType: Color
+          Value: "#00000000"
+        - Name: /TextColor
+          Id: g=22abac2b90533da037e92b37334ce358
+          Type: StoreColumn
+          DataType: Color
+          Value: "#00000000"
+        - Name: /BorderColor
+          Id: g=0d427833cb7b04d9dbf436e827b006f9
+          Type: StoreColumn
+          DataType: Color
+          Value: "#00000000"
+        - Name: /DataInputTextColor
+          Id: g=cfd6da398b66efc75a3a8292ed365f73
+          Type: StoreColumn
+          DataType: Color
+          Value: "#00000000"
+        - Name: /FontItalic
+          Id: g=4abf71a9b62739b299bc8e9324ab99d7
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: /FullScreen
+          Id: g=97722ebe948376a1da32d5693a178c77
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: /FontFamily
+          Id: g=ac3ecc83fb9adc072fae47cc26375f28
+          Type: StoreColumn
+          DataType: Font
+          Value: ""
+        - Name: /WindowColor
+          Id: g=ad003023ae3660a44f11be28ed503cf3
+          Type: StoreColumn
+          DataType: Color
+          Value: "#00000000"
+        - Name: /HeaderBackgroundColor
+          Id: g=511815ffe8f91d50b8c43fe586e969cb
+          Type: StoreColumn
+          DataType: Color
+          Value: "#00000000"
+      - Class: Reference
+        Target: ns=19;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=20
+        Direction: Forward
+    - Name: StyleSheetRecipeSchema
+      Id: g=ca281a04acfdf7e34c6a9403db722b5d
+      Type: SQLiteStoreTable
+      Children:
+      - Name: Columns
+        Id: g=0559b22ecbef37667faeb9100677c50e
+        Type: BaseObjectType
+        Children:
+        - Name: Name
+          Id: g=d08b54c0894b5094a1250eeb7c8ee914
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: /FontPixelSize
+          Id: g=f72542a9a85a10c2ff11ec3646191a2e
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: /AccentColor
+          Id: g=a6a79157524738623b00ee92186405e3
+          Type: StoreColumn
+          DataType: Color
+          Value: "#00000000"
+        - Name: /AccentTextColor
+          Id: g=c3e4423096944d2cb1a94e4c3f8de1aa
+          Type: StoreColumn
+          DataType: Color
+          Value: "#00000000"
+        - Name: /DataInputBackgroundColor
+          Id: g=a48dbe97ce8cfb9ce8fb40557c40a9b4
+          Type: StoreColumn
+          DataType: Color
+          Value: "#00000000"
+        - Name: /TextColor
+          Id: g=eab2969b99b28ab10e785b2ac8b900aa
+          Type: StoreColumn
+          DataType: Color
+          Value: "#00000000"
+        - Name: /BorderColor
+          Id: g=4f3da85b76b55b5da50b139ff59c2378
+          Type: StoreColumn
+          DataType: Color
+          Value: "#00000000"
+        - Name: /DataInputTextColor
+          Id: g=03f4bd042cca55740ad1ed2551570e9e
+          Type: StoreColumn
+          DataType: Color
+          Value: "#00000000"
+        - Name: /FontItalic
+          Id: g=3f56ee501c1b6b303d6de86b060fb294
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: /FullScreen
+          Id: g=463960b0fb7172455a15e6fdc5992908
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: /FontFamily
+          Id: g=aabfa6101d38ff5af696e2d4d0ee6b4f
+          Type: StoreColumn
+          DataType: Font
+          Value: ""
+        - Name: /WindowColor
+          Id: g=3465ddf3922aaaf327898fbe7a36fa80
+          Type: StoreColumn
+          DataType: Color
+          Value: "#00000000"
+        - Name: /HeaderBackgroundColor
+          Id: g=9fb4a0e22a5534f6bdb3e08ee8245e67
+          Type: StoreColumn
+          DataType: Color
+          Value: "#00000000"
+        - Name: /ChartStyle/BackgroundColor
+          Id: g=a48bf5c9eca37d18b431890461316a85
+          Type: StoreColumn
+          DataType: Color
+          Value: "#00000000"
+        - Name: /ChartStyle/GridColor
+          Id: g=74decc9b9ea292f57b2a7e4882ea681e
+          Type: StoreColumn
+          DataType: Color
+          Value: "#00000000"
+      - Class: Reference
+        Target: ns=19;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=20
+        Direction: Forward
+  - Name: MaxColumnNameLength
+    Id: g=908274121db785f4252b38288e0a1c74
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: MaxColumnCount
+    Id: g=d311912feaf06acf7be1ce67c32ac131
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: DataTypeCompatibilityMap
+    Id: g=53e7cea5cdfdd73b3aa391e48fd07009
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+    Value: {"Type":17,"Dimensions":[0,0],"Body":[]}
+  - Name: Status
+    Id: g=03814e6ad0c011b0322aa97a9cfe7156
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=19;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=59
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=33
+    Direction: Forward

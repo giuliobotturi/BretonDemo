@@ -1,0 +1,68 @@
+Name: Translations
+Id: g=1e4adde77ed405f03ded91f4c38dd7e3
+Type: FolderType
+Children:
+- Name: TranslationTable
+  Id: g=47cf13665a94a8529c0efc74d1500a83
+  Type: LocalizationDictionary
+  DataType: String
+  ValueRank: OneOrMoreDimensions
+  ArrayDimensions: [0,0]
+  Value: 
+   {
+    "Type": 12,
+    "Dimensions": [51,3],
+    "Body": [
+     "","it-IT","en-US",
+     "Belt Speed","Velocità nastro","Belt speed",
+     "InputCurrentIntensityKey","Intensità Corrente Alta","Input Current Intensity High",
+     "Timestamp","Timestamp","Timestamp",
+     "Severity","Gravità","Severity",
+     "Acked","Riconosciuto","Acked",
+     "Message","Messaggio","Message",
+     "Delete","Cancella","Delete",
+     "Current value","Valore corrente","Current value",
+     "Apply","Applica","Apply",
+     "Recipe value","Valore ricetta","Recipe value",
+     "SpindleCount","Numero di spindle","Spindles count",
+     "FullScreen","Schermo intero","Full Screen",
+     "Load","Carica","Load",
+     "InputCurrentIntensityAlarmMessage","Spindle {0}: input current intensity too high","Spindle {0}: input current intensity too high",
+     "Name:","Nome:","Name:",
+     "Password:","Password:","Password:",
+     "Show password","Mostra password","Show password",
+     "Cancel","Annulla","Cancel",
+     "Locale:","Locale:","Locale:",
+     "Groups","Gruppi","Groups",
+     "Modify","Modifica","Modify",
+     "Create","Crea","Create",
+     "OverviewPanelDisplayName","POLISHING MACHINE","POLISHING MACHINE",
+     "RecipesPanelDisplayName","STYLESHEET","STYLESHEET",
+     "SetupPanelDisplayName","MACHINE SETUP","MACHINE SETUP",
+     "UserEditorPanelDisplayName","USER EDITOR","USER EDITOR",
+     "StatsPanelDisplayName","STATISTICS","STATISTICS",
+     "Acknowledge all","Riconosci tutti","Acknowledge all",
+     "Acknowledge","Riconosci","Acknowledge",
+     "Name","Name","Name",
+     "Confirm All","Conferma tutti","Confirm All",
+     "Confirm","Conferma","Confirm",
+     "Follow","Segui","Follow",
+     "CurrentValue","Valore corrente","Current value",
+     "Style","Stile","Style",
+     "StyleValue","Valore stile","Style value",
+     "Save","Salva","Save",
+     "StylesheetParameter","Parametro stile","Style parameter",
+     "MaximumInput","Input massimo","Maximum input",
+     "LongitudinalStripsKey","STRISCE LONGITUDINALI","LONGITUDINAL STRIPS",
+     "StripsTableTitleKey","Strisce di levigazione","Polishing Strips",
+     "ReadOnlyDescription","DEMO NON INTERATTIVA","NONINTERACTIVE DEMO",
+     "Loading","Caricamento...","Loading...",
+     "Header background color","Colore di sfondo dell'intestazione","Header background color",
+     "Incorrect login credentials","Credenziali di accesso errate","Incorrect login credentials",
+     "Insufficient rights to view this page","Diritti insufficienti per visualizzare questa pagina","Insufficient rights to view this page",
+     "Page {0} of {1}","Pagina {0} di {1}","Page {0} of {1}",
+     "Refresh","Aggiorna","Refresh",
+     "From","Da","Alarm history filter",
+     "To","A","To"
+    ]
+   }

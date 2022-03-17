@@ -1,0 +1,13 @@
+Name: Groups
+Id: g=e3d2c0e5e03b027732d3b5b2a42f9622
+Type: FolderType
+Children:
+- Name: Administrator
+  Id: g=64a5c3afc7ac55a9714efa6c50bc921c
+  Type: GroupType
+- Name: Translator
+  Id: g=391e5a6c1502daaf0609d3729a7b05d5
+  Type: GroupType
+- Name: Asem
+  Id: g=904a0b69f7a296c7d35a3d936919233f
+  Type: GroupType

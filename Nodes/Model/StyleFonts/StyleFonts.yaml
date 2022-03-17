@@ -1,0 +1,39 @@
+Name: StyleFonts
+Id: g=121c4e23e75e6639483a5e60835c9530
+Type: FolderType
+Children:
+- Name: Lato
+  Id: g=23d658d3e4eb2dc27f452f7b53efc5b6
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Lato Black
+  Id: g=3322280bcb6c15d24a55c28ef763866f
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Lato Hairline
+  Id: g=8d51c9c72295f94662475cf6ec8b1752
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Lato Light
+  Id: g=dfb08dab6030a312f7e50d3e1fc3324d
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Prata
+  Id: g=9af4038ba7458cbb3ac90d7596e68bba
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Orbitron
+  Id: g=db0ed5d439f047d86e180211aaa7c0c4
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Avro
+  Id: g=5306903b92629dc1f04724cd6bf8507a
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

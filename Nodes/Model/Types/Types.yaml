@@ -1,0 +1,1306 @@
+Name: Types
+Id: g=c1dfa723dab919e2ad3e7bf6b4906711
+Type: FolderType
+Children:
+- Name: Slab
+  Id: g=c8a9920a1e9b363eb8036638c32e08ed
+  Supertype: BaseObjectType
+  DisplayName: {"LocaleId":"en-US","Text":""}
+  Children:
+  - Name: Width
+    Id: g=e4402da0de3c959272e589eb16f93350
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Height
+    Id: g=81d776a9e4202fcaa6db895e22f858ed
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Position
+    Id: g=718137c33d6b4c6b6dd0a6e45b702682
+    Type: AnalogItemType
+    DataType: Float
+    DisplayName: {"LocaleId":"en-US","Text":"Position"}
+    Value: 0.0
+    Children:
+    - Name: EURange
+      Id: g=97afec4510dd061fa3d489a15458a9ae
+      Type: RangeType
+      DataType: EURange
+      Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+      Children:
+      - Name: Low
+        Id: g=27f0ed2df92a392bb214f01a1be94288
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: -225.0
+      - Name: High
+        Id: g=f4879ab0186dbff56325e2cae579710d
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 988.0
+    - Name: EngineeringUnits
+      Id: g=c2654f09f7e56b6b4d5deff24b97d81e
+      Type: EUInformationType
+      DataType: EUInformation
+      Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+      Children:
+      - Name: UnitId
+        Id: g=1c49a1b65152a5d28c82f59dc4b84fc6
+        Type: BaseVariableType
+        DataType: Int32
+        ReferenceType: HasProperty
+        Value: 5067858
+      - Name: DisplayName
+        Id: g=ce0baa427d6528d42ce80be62c943dd4
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Description
+        Id: g=433c670749fa1876674a4d612af26d06
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: Thickness
+    Id: g=977dbc6cbf7733c8c5dce65ac8b202f0
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 20.0
+- Name: Spindle
+  Id: g=ccd2bf1857c471d11c7e8571180a45b3
+  Supertype: BaseObjectType
+  Children:
+  - Name: Process
+    Id: g=e32323ca428a2d909f3eb268eb8be28d
+    Type: BaseObjectType
+    Children:
+    - Name: Input
+      Id: g=452ee6592abe7ec1859da99c30a60077
+      Type: AnalogItemType
+      DataType: Float
+      DisplayName: {"LocaleId":"en-US","Text":"Input"}
+      Value: 20.0
+      Children:
+      - Name: EURange
+        Id: g=69d38bbf632cd14164830877989b6585
+        Type: RangeType
+        DataType: EURange
+        Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+        Children:
+        - Name: Low
+          Id: g=647200cadc4d719b7b95fae145856c64
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 0.0
+        - Name: High
+          Id: g=3a9da660e175ec30d1dcdd7025f47a61
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 30.0
+        - Name: Constrain
+          Id: g=4da3933730e348089bd926c2cb37f652
+          Type: BaseVariableType
+          DataType: Boolean
+          ReferenceType: HasProperty
+          ModellingRule: Optional
+          Value: true
+      - Name: EngineeringUnits
+        Id: g=74840091d29f55a22e8d11731ca0758f
+        Type: EUInformationType
+        DataType: EUInformation
+        Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+        Children:
+        - Name: UnitId
+          Id: g=9cacd98650d7e9f54fae30feb7040d7d
+          Type: BaseVariableType
+          DataType: Int32
+          ReferenceType: HasProperty
+          Value: 4279632
+        - Name: DisplayName
+          Id: g=895fa07d60538220a2f72a6c16858344
+          Type: BaseVariableType
+          DataType: LocalizedText
+          ReferenceType: HasProperty
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Description
+          Id: g=672e1057c870af7f21bd9b707fe91d55
+          Type: BaseVariableType
+          DataType: LocalizedText
+          ReferenceType: HasProperty
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Pressure
+      Id: g=a9400914c18a55263194b75e355d7ad4
+      Type: AnalogItemType
+      DataType: Float
+      DisplayName: {"LocaleId":"en-US","Text":"Pressure"}
+      Value: 2.0
+      Children:
+      - Name: EURange
+        Id: g=15b2e3e92c36f15b40d33f260891e96a
+        Type: RangeType
+        DataType: EURange
+        Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+        Children:
+        - Name: Low
+          Id: g=44420b7894958e6cfefc11f44b6d79ed
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 1.0
+        - Name: High
+          Id: g=51bcbbda0cdd6c06234c19c16e6e6048
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 3.0
+        - Name: Constrain
+          Id: g=63b833a75fc4f5d2d9d516ddbef6389a
+          Type: BaseVariableType
+          DataType: Boolean
+          ReferenceType: HasProperty
+          ModellingRule: Optional
+          Value: true
+      - Name: EngineeringUnits
+        Id: g=d5f1981ade38a4c0cdf84063e796fe1a
+        Type: EUInformationType
+        DataType: EUInformation
+        Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+        Children:
+        - Name: UnitId
+          Id: g=a358fb8673578a378e34f0b5a7a453fb
+          Type: BaseVariableType
+          DataType: Int32
+          ReferenceType: HasProperty
+          Value: 4342098
+        - Name: DisplayName
+          Id: g=10ae3f35441a6771982f8589745d93bc
+          Type: BaseVariableType
+          DataType: LocalizedText
+          ReferenceType: HasProperty
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Description
+          Id: g=ad57e1766bf4128524840f788b01935b
+          Type: BaseVariableType
+          DataType: LocalizedText
+          ReferenceType: HasProperty
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Position
+      Id: g=af4385d62caab6862e01fd8dc2c1a499
+      Type: AnalogItemType
+      DataType: Float
+      DisplayName: {"LocaleId":"en-US","Text":"Position"}
+      Value: 0.0
+      Children:
+      - Name: EURange
+        Id: g=18fe1e0d11fad7dde17dd17615459ce7
+        Type: RangeType
+        DataType: EURange
+        Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+        Children:
+        - Name: Low
+          Id: g=80a2bc9d1181c2b1053dc396ae5d3dc9
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 50.0
+        - Name: High
+          Id: g=9d024d4e11e25b6ee88f2477b46f7f51
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 300.0
+        - Name: Constrain
+          Id: g=a72f4cb12801716439407ddd614a00a7
+          Type: BaseVariableType
+          DataType: Boolean
+          ReferenceType: HasProperty
+          ModellingRule: Optional
+          Value: true
+      - Name: EngineeringUnits
+        Id: g=8aaca8c41b4ad79f93c9ca47488405e5
+        Type: EUInformationType
+        DataType: EUInformation
+        Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+        Children:
+        - Name: UnitId
+          Id: g=3ee557eb905c164fa7899a1e3a7d088a
+          Type: BaseVariableType
+          DataType: Int32
+          ReferenceType: HasProperty
+          Value: -1
+        - Name: DisplayName
+          Id: g=0a691a6489fc287645aa9a921642ff2b
+          Type: BaseVariableType
+          DataType: LocalizedText
+          ReferenceType: HasProperty
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Description
+          Id: g=b2a32d411bf3960c194531780014de11
+          Type: BaseVariableType
+          DataType: LocalizedText
+          ReferenceType: HasProperty
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: BeamSlowdown
+      Id: g=d7a446c152c28ecc1289a4bebaa6c438
+      Type: AnalogItemType
+      DataType: Float
+      DisplayName: {"LocaleId":"en-US","Text":"Beam Slowdown"}
+      Value: 10.0
+      Children:
+      - Name: EURange
+        Id: g=a4dc23850409c1c9db92bc38f499fe04
+        Type: RangeType
+        DataType: EURange
+        Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+        Children:
+        - Name: Low
+          Id: g=0f0514d8932349e19b5579668700a237
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 0.0
+        - Name: High
+          Id: g=53d7a73e3e598e82db6a0968f8c577ba
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 100.0
+        - Name: Constrain
+          Id: g=ef792e5c1d3df76f840b7dc8692f5bc2
+          Type: BaseVariableType
+          DataType: Boolean
+          ReferenceType: HasProperty
+          ModellingRule: Optional
+          Value: true
+      - Name: EngineeringUnits
+        Id: g=1c7380e64e77bd07e935ae6e5e457553
+        Type: EUInformationType
+        DataType: EUInformation
+        Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+        Children:
+        - Name: UnitId
+          Id: g=8c9a536062ed50c698b7621527b4bcf4
+          Type: BaseVariableType
+          DataType: Int32
+          ReferenceType: HasProperty
+          Value: -1
+        - Name: DisplayName
+          Id: g=46a99912fa3543435c8bf3df3521cd7d
+          Type: BaseVariableType
+          DataType: LocalizedText
+          ReferenceType: HasProperty
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Description
+          Id: g=32a352b2fd8ea08121ac8bdfa7925ad1
+          Type: BaseVariableType
+          DataType: LocalizedText
+          ReferenceType: HasProperty
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Error
+      Id: g=c6c26a4d4b5a6012b85778c90a12abeb
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: ExpressionEvaluator1
+        Id: g=20c5928f4864efc4cad71be84437f53b
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Id: g=2c72f27e67f4565184268b465bf7fe8e
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0} < {1}"
+        - Name: ns=5;Source0
+          Id: g=7ffb1cbe7172c017ca1467c799cdf8a3
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=642f25a281b87c0263cc1fb33ac4471a
+            Type: DataBind
+            DataType: NodePath
+            Value: "../../../AbrasiveLevel"
+        - Name: ns=5;Source1
+          Id: g=023c00c859eb16d02b4dc8dc0aa14a6d
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=60ced01e6874a6bcbc66b94ec48bdf4d
+            Type: DataBind
+            DataType: NodePath
+            Value: "../../../AbrasiveLevel/EURange/Low"
+    - Name: AbrasiveLevel
+      Id: g=5c0b3914137dc14b4d5bdc05de4d52d8
+      Type: AnalogItemType
+      DataType: Float
+      DisplayName: {"LocaleId":"en-US","Text":"Abrasive Level"}
+      Value: 10.0
+      Children:
+      - Name: EURange
+        Id: g=a42c4ae6dc24ecb88b5a869b2a7f4a7d
+        Type: RangeType
+        DataType: EURange
+        Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+        Children:
+        - Name: Low
+          Id: g=ab21e702040adfaeb4103f236ae6a280
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 0.0
+          Children:
+          - Name: DynamicLink
+            Id: g=4cc644f2aac77d461f68a664a81eb9f8
+            Type: DataBind
+            DataType: NodePath
+            Value: "../../../../Configuration/MinimumAbrasiveLevel"
+        - Name: High
+          Id: g=c8a31f762adcd3bbae9555059806ec70
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 10.0
+          Children:
+          - Name: DynamicLink
+            Id: g=2702741d57875c9d62bec5d7172387e0
+            Type: DataBind
+            DataType: NodePath
+            Value: "../../../../Configuration/MaximumAbrasiveLevel"
+      - Name: EngineeringUnits
+        Id: g=f9ade71583fc719105df1ba5c476a5ae
+        Type: EUInformationType
+        DataType: EUInformation
+        Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+        Children:
+        - Name: UnitId
+          Id: g=94e5147c36be04747dd5d5fc1d2dae72
+          Type: BaseVariableType
+          DataType: Int32
+          ReferenceType: HasProperty
+          Value: 5002322
+        - Name: DisplayName
+          Id: g=d43203ca3f9dc95196405d587beb8fa1
+          Type: BaseVariableType
+          DataType: LocalizedText
+          ReferenceType: HasProperty
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Description
+          Id: g=285a9d017cf042c12ef61fa2ff8e8ed1
+          Type: BaseVariableType
+          DataType: LocalizedText
+          ReferenceType: HasProperty
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Status
+      Id: g=245457a0e7157bea4c3e0d6d695af8ee
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+      Children:
+      - Name: SpindleStatus1
+        Id: g=8f26627d8393d6bd45841b00f9b1902e
+        Type: SpindleStatus
+        Children:
+        - Name: Source
+          Id: g=e4ba4b40da83b029b506f7e6d54d6a65
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Id: g=aac164eafe0f713950c24ab35ab2f206
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Id: g=1165c414fd7f30a41c4dde01dca1a79b
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "{0} + {1} * 2"
+            - Name: ns=5;Source0
+              Id: g=ad25a554194b646c1d8951ac4a93d850
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Id: g=5815c155ebadf9afd40f6c0da50d7594
+                Type: DataBind
+                DataType: NodePath
+                Value: "../../../../../Error"
+            - Name: Mode
+              Id: g=5d16d18b54f561e0cf2c06b73a48a381
+              Type: PropertyType
+              DataType: DataBindModeType
+              ReferenceType: HasComponent
+              Value: 0
+            - Name: ns=5;Source1
+              Id: g=c9aba1cfef2c7797434638233cc727bd
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Id: g=bbb92a202783176e78dc857ddf87f7fd
+                Type: DataBind
+                DataType: NodePath
+                Value: "../../../../../../Configuration/Active"
+  - Name: Configuration
+    Id: g=6023c67c1b91d3d968b2dae0cee0ee7b
+    Type: BaseObjectType
+    Children:
+    - Name: Active
+      Id: g=3feb2e933dc9df4884bf37bc70a38e60
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: MaximumAbrasiveLevel
+      Id: g=c66dfe9a403f709c491af27da6740a0b
+      Type: AnalogItemType
+      DataType: Float
+      Value: 10.0
+      Children:
+      - Name: EURange
+        Id: g=c15d5352da6b88e84a01c96fbf656660
+        Type: RangeType
+        DataType: EURange
+        Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+        Children:
+        - Name: Low
+          Id: g=1892235d173cb970c779a1441f710669
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 2.0
+        - Name: High
+          Id: g=abadd6288b26d2a8e705ddcdc77c440d
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 30.0
+        - Name: Constrain
+          Id: g=e5f90c00c4f8be08147e76fc848d7d90
+          Type: BaseVariableType
+          DataType: Boolean
+          ReferenceType: HasProperty
+          ModellingRule: Optional
+          Value: true
+      - Name: EngineeringUnits
+        Id: g=7217d4d8f476a3c02f3fdcfb9f252b2d
+        Type: EUInformationType
+        DataType: EUInformation
+        Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+        Children:
+        - Name: UnitId
+          Id: g=08f1fd0348d6a3bc753138b90e5eca12
+          Type: BaseVariableType
+          DataType: Int32
+          ReferenceType: HasProperty
+          Value: 5002322
+        - Name: DisplayName
+          Id: g=9a7c1cd55955034a4f48d979943247ab
+          Type: BaseVariableType
+          DataType: LocalizedText
+          ReferenceType: HasProperty
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Description
+          Id: g=c3f78ca868f50db0354708432faf2e63
+          Type: BaseVariableType
+          DataType: LocalizedText
+          ReferenceType: HasProperty
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: DynamicLink
+        Id: g=18dfb42873fa99b33b21533822a762ba
+        Type: DataBind
+        DataType: NodePath
+        Value: "{NodeId:ns=29;g=14bc159b-58d7-f35f-b5fa-4c24ce7ed7a2}"
+    - Name: MinimumAbrasiveLevel
+      Id: g=e35bbd8dac8a4984dd659aa83109709d
+      Type: AnalogItemType
+      DataType: Float
+      Value: 5.0
+      Children:
+      - Name: EURange
+        Id: g=d7cd2a6083f790104fd9af94abe7aa1b
+        Type: RangeType
+        DataType: EURange
+        Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+        Children:
+        - Name: Low
+          Id: g=221acb434a400e5ee65cec1a3f00131b
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 1.0
+        - Name: High
+          Id: g=c7d8f4ab6404bcf6b797e936e010630c
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 9.0
+        - Name: Constrain
+          Id: g=38a3a2d72df318534c49c5877de4e083
+          Type: BaseVariableType
+          DataType: Boolean
+          ReferenceType: HasProperty
+          ModellingRule: Optional
+          Value: true
+      - Name: EngineeringUnits
+        Id: g=9ff2bb135e4a626356bf9f170f7d5ceb
+        Type: EUInformationType
+        DataType: EUInformation
+        Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+        Children:
+        - Name: UnitId
+          Id: g=f96d47f4590e2b594597658e840f406e
+          Type: BaseVariableType
+          DataType: Int32
+          ReferenceType: HasProperty
+          Value: 5002322
+        - Name: DisplayName
+          Id: g=4b0dd3705c06368167b219673ab29fe3
+          Type: BaseVariableType
+          DataType: LocalizedText
+          ReferenceType: HasProperty
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Description
+          Id: g=8dbe517c2b2d9c3903bf34a5155fead8
+          Type: BaseVariableType
+          DataType: LocalizedText
+          ReferenceType: HasProperty
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: DynamicLink
+        Id: g=e1f14e3a80eb5bb4f09d98e59d741c37
+        Type: DataBind
+        DataType: NodePath
+        Value: "{NodeId:ns=29;g=19cbd8bc-dc9f-abd1-97a0-2179defd1b80}"
+  - Name: ID
+    Id: g=f6bea1ba4368be2659cd9ceb2b6f6cc9
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: AbrasiveLevelAlarm
+    Id: g=58b4762baaf2c71760d5adb9ca9ac671
+    Type: NonExclusiveLevelAlarmController
+    Children:
+    - Name: InputValue
+      Id: g=8ab5ba84a14b9a8249ad08b59c3ec9bb
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Id: g=45bfa233805ab560d798750a9c0e0c1f
+        Type: DataBind
+        DataType: NodePath
+        Value: "../../Process/AbrasiveLevel"
+    - Name: HighLimit
+      Id: g=f2c892940160716c5a7925a4bdd84457
+      Type: BaseDataVariableType
+      DataType: Double
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: LowLimit
+      Id: g=0a1ad05f3d49957ac0b9face9cac3c04
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Id: g=3bc36e0adca41c7a6ebb2ba632b8dc65
+        Type: DataBind
+        DataType: NodePath
+        Value: "../../Process/AbrasiveLevel/EURange/Low"
+    - Name: Message
+      Id: g=99d53ba7e7f20bd8d4e6ab2d42396d2b
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: StringFormatter1
+        Id: g=44c5d8e7628c4ff2a7e23a24f1172908
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Id: g=2df2f24ede47dafc38e0b24abbf9b9c2
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Spindle {0}: Abrasive level low"}
+        - Name: ns=5;Source0
+          Id: g=6f90fbcb3364ceeaaf2ed2611a9bc4e8
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=92d50d1c3bb2fecb4a687865c321b0a8
+            Type: DataBind
+            DataType: NodePath
+            Value: "../../../../ID"
+            Children:
+            - Name: IsPull
+              Id: g=7ff7a6ad302c9046bb80ee52337a4558
+              Type: BaseVariableType
+              DataType: Boolean
+              ModellingRule: Optional
+              Value: true
+        - Name: IsPull
+          Id: g=e7cb37e148d52afe55cf66ee56390103
+          Type: PropertyType
+          DataType: Boolean
+          ReferenceType: HasComponent
+          ModellingRule: Optional
+          Value: true
+    - Name: AutoConfirm
+      Id: g=e2c6d235ff0cca041e91dab047090897
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: true
+    - Name: Severity
+      Id: g=2a857291e52d841775c17e382ef87a2e
+      Type: BaseDataVariableType
+      DataType: UInt16
+      ModellingRule: Optional
+      Value: 200
+    - Name: LastEvent
+      Id: g=00b80e28c59d9d5ebbbf2afc10f850d9
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+    - Class: Reference
+      Target: ns=23;i=81
+      Direction: Forward
+    - Class: Reference
+      Target: ns=23;i=82
+      Direction: Forward
+    - Class: Reference
+      Target: ns=23;i=83
+      Direction: Forward
+  - Name: InputCurrentIntensityAlarm
+    Id: g=e35d6781e17db58c330c3028a37474f0
+    Type: ExclusiveLevelAlarmController
+    Children:
+    - Name: InputValue
+      Id: g=e0c1f4e61363cd8c29d6cef9ac33c142
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Id: g=53ccc7c8bd8d02fda19380a75ea59293
+        Type: DataBind
+        DataType: NodePath
+        Value: "../../Process/Input"
+    - Name: Message
+      Id: g=ca123976c36ac33d2335fc0bbcf660fa
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: StringFormatter1
+        Id: g=63723180272c46e6610da6ff46001ddf
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Id: g=ea3fea1524f0df9634159d6268986370
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"NamespaceIndex":29,"TextId":"InputCurrentIntensityAlarmMessage"}
+        - Name: IsPull
+          Id: g=dddf7a6c4ed271c62a96a5443faa6ef1
+          Type: PropertyType
+          DataType: Boolean
+          ReferenceType: HasComponent
+          ModellingRule: Optional
+          Value: true
+        - Name: ns=5;Source0
+          Id: g=047a4da75c9611736dad9614566fafca
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=5d0639530524b88e304f7de70746c831
+            Type: DataBind
+            DataType: NodePath
+            Value: "../../../../ID"
+            Children:
+            - Name: IsPull
+              Id: g=ca128af458e88c96127a5ccb6de8c87e
+              Type: BaseVariableType
+              DataType: Boolean
+              ModellingRule: Optional
+              Value: true
+    - Name: HighLimit
+      Id: g=98cded13639707a59e798fb4aab57d7e
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Id: g=4c5232e8327e399b5c548e65ca252571
+        Type: DataBind
+        DataType: NodePath
+        Value: "../../Process/Input/EURange/High"
+    - Name: Severity
+      Id: g=42d0ce84f5ab2cf42495b939f53e52f9
+      Type: BaseDataVariableType
+      DataType: UInt16
+      ModellingRule: Optional
+      Value: 500
+    - Name: LastEvent
+      Id: g=e71336afaa326a5975d56ec3b66fa170
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+    - Class: Reference
+      Target: ns=23;i=81
+      Direction: Forward
+    - Class: Reference
+      Target: ns=23;i=82
+      Direction: Forward
+    - Class: Reference
+      Target: ns=23;i=83
+      Direction: Forward
+- Name: Beam
+  Id: g=ac03af1411c769d045e1495651eef694
+  Supertype: BaseObjectType
+  Children:
+  - Name: BottomOut
+    Id: g=04a3292b7ef863c0dc87d3d020e167cb
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Position
+    Id: g=5b6ff340c282d804d39f97243a7ce5b0
+    Type: AnalogItemType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: EURange
+      Id: g=1bc6576504249655e2d0e875f30072cb
+      Type: RangeType
+      DataType: EURange
+      Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+      Children:
+      - Name: Low
+        Id: g=9efe2ab64d2ba813201fc0c02142050b
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 0.0
+      - Name: High
+        Id: g=92394e31c2184f9b7ab424d1b73e141a
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 130.0
+    - Name: EngineeringUnits
+      Id: g=fd13ca35f0551354f2fcde6a2757f199
+      Type: EUInformationType
+      DataType: EUInformation
+      Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+      Children:
+      - Name: UnitId
+        Id: g=3cdb77a10d0e0a360bab0a63d203047e
+        Type: BaseVariableType
+        DataType: Int32
+        ReferenceType: HasProperty
+        Value: -1
+      - Name: DisplayName
+        Id: g=9555694d030e5ff453f6d2dfc7f2e3bf
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Description
+        Id: g=95939080335dd67408be26628fb5dcc1
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+- Name: PolishingMachine
+  Id: g=61807dfa50982ea1765c9c8cc144ba1b
+  Supertype: BaseObjectType
+  Children:
+  - Name: Width
+    Id: g=aecfe8069f98919ad402fe36a2199328
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Height
+    Id: g=891b3862d7d7939a9c1aa66081483033
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Spindles
+    Id: g=8458706d7c5bc13fd9011a820e9112d6
+    Type: BaseObjectType
+    Children:
+    - Name: SpindlesInputUIContainer
+      Id: g=524c50d62cb5ef02814d78bc1f17b9ef
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Id: g=a0edd7941a435f78ab464ef19b217132
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: SpindlesFrontUIContainer
+      Id: g=e08be80291dd315a581f40cf625337d3
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Id: g=a6be02503c02a8a5c9f6a66756bff0cc
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: SpindlesTopUIContainer
+      Id: g=53ac24b7cf6d926f8f384d35e827caf3
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Id: g=70582851065648e95589cccda7bc9921
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: Count
+      Id: g=a8ca0d63a23c3fec57bb3c1a8a33b783
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: ns=0;EURange
+        Id: g=2dbe649e5b1315c660001f35d3a8c4c0
+        Type: RangeType
+        DataType: EURange
+        Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+        Children:
+        - Name: Low
+          Id: g=fcafd8d6d4d5465e7d82a6c7358f4ed1
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 1.0
+        - Name: High
+          Id: g=c0253cb6e2adcd3e513ea046619334db
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 19.0
+        - Name: Constrain
+          Id: g=6fd7dc0147acaa5d70bc6c93bfce432a
+          Type: BaseVariableType
+          DataType: Boolean
+          ReferenceType: HasProperty
+          ModellingRule: Optional
+          Value: true
+    - Name: SpindlesContainer
+      Id: g=0168f173285942906a1afe4db4eba31e
+      Type: BaseObjectType
+    - Name: SpindlesPensContainer
+      Id: g=46d3d7682bfd5746454beb507dd0f26d
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Id: g=f90f6b01171582e9ab3033c146b5f7de
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: SpindlesPensCheckboxContainer
+      Id: g=22c04de0dd4872500bf500e308862476
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Id: g=e24eb30691a4bc9b7bb05674314772d8
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: MainNavigationPanel
+      Id: g=fbac32ee68c6893f1a7c54c78dbcf319
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Id: g=46c4642a28461556bb183bf76c0a91e9
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: SpindlesBeam
+    Id: g=82676a28e1afe4e2838baca78a717adb
+    Type: Beam
+    Children:
+    - Name: BottomOut
+      Id: g=a69356bfad614c40efaae6249f40143a
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: Position
+      Id: g=9213b7bae2837ebe2e5443904e5c796c
+      Type: AnalogItemType
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: EURange
+        Id: g=ccd1aa6fe5839c5bcb4d8f217fac1ffd
+        Type: RangeType
+        DataType: EURange
+        Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+        Children:
+        - Name: Low
+          Id: g=fe048ce052e740ad21cad82eeb7d4655
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 0.0
+        - Name: High
+          Id: g=839b40f9dd25dbc46c3f926eff746551
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 130.0
+      - Name: EngineeringUnits
+        Id: g=12ff8aa8fec974633253065e39855b09
+        Type: EUInformationType
+        DataType: EUInformation
+        Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+        Children:
+        - Name: UnitId
+          Id: g=8b6bcd3a2cb13fddc7aee496e51e3c58
+          Type: BaseVariableType
+          DataType: Int32
+          ReferenceType: HasProperty
+          Value: 4410708
+        - Name: DisplayName
+          Id: g=433db3a910e58187c00008ecbb327ac4
+          Type: BaseVariableType
+          DataType: LocalizedText
+          ReferenceType: HasProperty
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Description
+          Id: g=74dd1afe3b34824cbede844ac50b8a39
+          Type: BaseVariableType
+          DataType: LocalizedText
+          ReferenceType: HasProperty
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: PolishingMachineLogic
+    Id: g=3367b0f25746cc15ca67c3e48ff1c246
+    Type: NetLogic
+  - Name: Configuration
+    Id: g=f3ec563e22f6ba8c36376fefe566f149
+    Type: BaseObjectType
+    Children:
+    - Name: MaximumAbrasiveLevel
+      Id: g=8abeceb171423e217c0730e90dab893c
+      Type: AnalogItemType
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: EURange
+        Id: g=bce4a9654334e3ffdec7f16340f45856
+        Type: RangeType
+        DataType: EURange
+        Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+        Children:
+        - Name: Low
+          Id: g=eb56dc2222bf7b33dcfbd82c2c717787
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 2.0
+        - Name: High
+          Id: g=45fea69ff9e7533b68613ddc3a07d98d
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 30.0
+        - Name: Constrain
+          Id: g=8a1e4f4858258aee24fd4429b2e53de2
+          Type: BaseVariableType
+          DataType: Boolean
+          ReferenceType: HasProperty
+          ModellingRule: Optional
+          Value: true
+      - Name: EngineeringUnits
+        Id: g=54f79a7bf6cf83f53fa6ccd08b36a328
+        Type: EUInformationType
+        DataType: EUInformation
+        Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+        Children:
+        - Name: UnitId
+          Id: g=1377c80aaa8fe5b233275a89333f59a9
+          Type: BaseVariableType
+          DataType: Int32
+          ReferenceType: HasProperty
+          Value: 5002322
+        - Name: DisplayName
+          Id: g=b70d0b85b9828c8d8ae081b4baf0af19
+          Type: BaseVariableType
+          DataType: LocalizedText
+          ReferenceType: HasProperty
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Description
+          Id: g=dff1d9e910cabb340a228bda84b94416
+          Type: BaseVariableType
+          DataType: LocalizedText
+          ReferenceType: HasProperty
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: MinimumAbrasiveLevel
+      Id: g=2003a66c288b75a5da40fd0a987ee145
+      Type: AnalogItemType
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: EURange
+        Id: g=abae986beb744bbbfaf86e4772cb1858
+        Type: RangeType
+        DataType: EURange
+        Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+        Children:
+        - Name: Low
+          Id: g=4981a11d9f811ab5da4871cf8623d586
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 1.0
+        - Name: High
+          Id: g=194bca34965e426602631bcc64a3f74e
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 9.0
+        - Name: Constrain
+          Id: g=f348ea328ad8a4f523a03de5896bb21a
+          Type: BaseVariableType
+          DataType: Boolean
+          ReferenceType: HasProperty
+          ModellingRule: Optional
+          Value: true
+      - Name: EngineeringUnits
+        Id: g=f6d3454979c06490addbdf428cee3983
+        Type: EUInformationType
+        DataType: EUInformation
+        Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+        Children:
+        - Name: UnitId
+          Id: g=1c8e5d3260eda9f83dbbc6a4f669189b
+          Type: BaseVariableType
+          DataType: Int32
+          ReferenceType: HasProperty
+          Value: 5002322
+        - Name: DisplayName
+          Id: g=5d737db44e2379f18a9569092660f65f
+          Type: BaseVariableType
+          DataType: LocalizedText
+          ReferenceType: HasProperty
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Description
+          Id: g=9bbd6a9f9c05f699b2719facb540ff15
+          Type: BaseVariableType
+          DataType: LocalizedText
+          ReferenceType: HasProperty
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: MaximumInput
+      Id: g=a38dc84190bade48b2c31842ad92d9ae
+      Type: AnalogItemType
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: EURange
+        Id: g=4507c9a4c1118588fe8237140f47ef6f
+        Type: RangeType
+        DataType: EURange
+        Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+        Children:
+        - Name: Low
+          Id: g=145b74eb58420192c538bd4357209bcd
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 100.0
+        - Name: High
+          Id: g=be8a382674f01833282c25289be1e4d0
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 250.0
+        - Name: Constrain
+          Id: g=58ce54dcb5caf89fa08ca9d31afff41b
+          Type: BaseVariableType
+          DataType: Boolean
+          ReferenceType: HasProperty
+          ModellingRule: Optional
+          Value: true
+      - Name: EngineeringUnits
+        Id: g=3ee10d9c3c968c3c25ba2c1bb67386f9
+        Type: EUInformationType
+        DataType: EUInformation
+        Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+        Children:
+        - Name: UnitId
+          Id: g=c496a20753ab1126942c3efba1dadfc6
+          Type: BaseVariableType
+          DataType: Int32
+          ReferenceType: HasProperty
+          Value: 4279632
+        - Name: DisplayName
+          Id: g=86b2240312d5edff9f8f0d12c9c0fb86
+          Type: BaseVariableType
+          DataType: LocalizedText
+          ReferenceType: HasProperty
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Description
+          Id: g=d85a00114eddf28c0a90b903f1ce7038
+          Type: BaseVariableType
+          DataType: LocalizedText
+          ReferenceType: HasProperty
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+- Name: SlabStrip
+  Id: g=859d688db28d589b8d0c9541cd3f0f65
+  Supertype: BaseObjectType
+  Children:
+  - Name: Height
+    Id: g=c3655b3edc93c5b25f14a89eb85c9480
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 140.0
+  - Name: X
+    Id: g=ad2d17775df61a02196da88f6d8caaa8
+    Type: AnalogItemType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: EURange
+      Id: g=d5745f09cbc5cac2cfca650d3f8f5ac4
+      Type: RangeType
+      DataType: EURange
+      Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+      Children:
+      - Name: Low
+        Id: g=1d53a1c660b3efb00c03564dfb49d15d
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 0.0
+      - Name: High
+        Id: g=41de7e9c6fed789d0a05d9feec31703f
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 600.0
+      - Name: Constrain
+        Id: g=b8481cc3203ebed3b278fd77a5aeb987
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        ModellingRule: Optional
+        Value: true
+    - Name: EngineeringUnits
+      Id: g=8613a9428208e04c5e9d0c39614bda16
+      Type: EUInformationType
+      DataType: EUInformation
+      Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+      Children:
+      - Name: UnitId
+        Id: g=1a5f837419ac8457c100f57c78b8fc95
+        Type: BaseVariableType
+        DataType: Int32
+        ReferenceType: HasProperty
+        Value: -1
+      - Name: DisplayName
+        Id: g=caf7291522337bee59b7f556909071cd
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Description
+        Id: g=f31a32ce18dd1f7c95ac4c9e8f740415
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: Width
+    Id: g=a3b9965c5185c49acb108d29678856d0
+    Type: AnalogItemType
+    DataType: Float
+    Value: 40.0
+    Children:
+    - Name: EURange
+      Id: g=5f8ccaeff2850f38421564f18247ba27
+      Type: RangeType
+      DataType: EURange
+      Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+      Children:
+      - Name: Low
+        Id: g=28c206f46912471935082578d4c89973
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 30.0
+      - Name: High
+        Id: g=f06b07d83bba725c5e1ce564ebefa846
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 60.0
+      - Name: Constrain
+        Id: g=845492c4b0978947815a84aa6cc1a7fc
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        ModellingRule: Optional
+        Value: true
+    - Name: EngineeringUnits
+      Id: g=4e3bfa4f94002ce768d80e644e7dedd3
+      Type: EUInformationType
+      DataType: EUInformation
+      Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+      Children:
+      - Name: UnitId
+        Id: g=de53b1c77fbe943f83173bc124ecdd3f
+        Type: BaseVariableType
+        DataType: Int32
+        ReferenceType: HasProperty
+        Value: -1
+      - Name: DisplayName
+        Id: g=03745b819517ccdea2a587092594d7da
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Description
+        Id: g=476a4fdbf12df69623eab8bd6accb3cc
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}

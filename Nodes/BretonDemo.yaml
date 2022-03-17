@@ -1,0 +1,41 @@
+Name: BretonDemo
+Id: g=2fa6b0413d4eac856fc96815fa7577c3
+Type: ProjectFolder
+Children:
+- Name: Locales
+  Id: g=b11a1d144099865326a3d4587a0ac6f7
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: ["it-IT","en-US"]
+- Name: BranchingEnabled
+  Id: g=38c2ce7b1b55c45b4f8fc05cd40d4ff8
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- File: UI/UI.yaml
+- File: Model/Model.yaml
+- File: Converters/Converters.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Loggers/Loggers.yaml
+- File: DataStores/DataStores.yaml
+- File: 'OPC-UA/OPC-UA.yaml'
+- File: CommDrivers/CommDrivers.yaml
+- File: Reports/Reports.yaml
+- File: Scripts/Scripts.yaml
+- File: Users/Users.yaml
+- File: Translations/Translations.yaml
+- File: Retentivity/Retentivity.yaml
+- Name: StyleSheetRecipeSchema
+  Id: g=302bbf1b623aaa20faa7af6a027f594e
+  Type: Alias
+  DataType: NodeId
+  Value: {"IdType":2,"Id":"fc8c790bb22c7c8fd541ebfd928d4ba2","Namespace":29}
+  Children:
+  - Name: Kind
+    Id: g=7d105b3b15518f9ba95d6c8bab687e5e
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"1ca616a0c3304f6683a599b2a0a4e9ca","Namespace":29}

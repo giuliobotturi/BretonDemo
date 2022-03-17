@@ -1,0 +1,779 @@
+Name: Spindles
+Id: g=65b9fe823e77007224f91a221fd30f90
+Type: FolderType
+Children:
+- Name: SpindleFront
+  Id: g=ac62b6241c236bb2118aaf2dbc4efb89
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Height
+    Id: g=574df5ccc2967e29827538eb2520abd7
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 165.0
+  - Name: Spindle
+    Id: g=34607ca96820d898f30d49b7f5ab583c
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=bb0fe85844226e07be2d7b4473d80fe4
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"ccd2bf1857c471d11c7e8571180a45b3","Namespace":29}
+  - Name: HeadFrontBG
+    Id: g=60617c07ecc0dfe44b951d3b34b49c79
+    Type: Image
+    Children:
+    - Name: Path
+      Id: g=957238b750f06922f6e87d6ddcaee1a7
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: ""
+      Children:
+      - Name: KeyValueConverter1
+        Id: g=b90b5583b7869990e4367f3a48804ee4
+        Type: ValueMapConverter
+        Children:
+        - Name: Source
+          Id: g=8778cb8df0709cef1943eed703aa1360
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=10b07f4d0dbe2f0c1683cb91b2fc33d6
+            Type: DataBind
+            DataType: NodePath
+            Value: "{Spindle}/Process/Status"
+            Children:
+            - Name: Mode
+              Id: g=c18753e9f02db6a74060741a86588c46
+              Type: BaseVariableType
+              DataType: DataBindModeType
+              ModellingRule: Optional
+              Value: 2
+        - Name: Pairs
+          Id: g=b2aa253d987fb9608de620ca15d9d4f9
+          Type: BaseObjectType
+          ModellingRule: None
+          Children:
+          - Name: Pair
+            Id: g=d662150c4e2f8eaba6a85eeb90a9486d
+            Type: ValueMapPair
+            Children:
+            - Name: Key
+              Id: g=a2d67371a40eb886ca05b3f7f1ab6c33
+              Type: BaseDataVariableType
+              DataType: String
+              Value: ""
+            - Name: Value
+              Id: g=e453b2e7531f702ab3cdbccd664820ca
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              Value: "ns=29;%PROJECTDIR%/ASEM_Breton_HeadFront_Full_Grey.png"
+          - Name: Pair1
+            Id: g=b454726cb8c5c129852b618290331caf
+            Type: ValueMapPair
+            Children:
+            - Name: Key
+              Id: g=a77d5d5e9be6661924a2818d21063e3e
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "ERROR"
+            - Name: Value
+              Id: g=fddb821ecac44456f59061a2b4d00b8d
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              Value: "ns=29;%PROJECTDIR%/ASEM_Breton_HeadFront_Full_Red.png"
+          - Name: Pair2
+            Id: g=f848532e5954e35750212ac67f720129
+            Type: ValueMapPair
+            Children:
+            - Name: Key
+              Id: g=1cecd868c6750c5d37d4de4f545ef1cf
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "ACTIVE"
+            - Name: Value
+              Id: g=fd3a5e6879a2415aa454c97dfdc2ceee
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              Value: "ns=29;%PROJECTDIR%/ASEM_Breton_HeadFront_Full_Green.png"
+    - Name: FillMode
+      Id: g=0bb9294d133270c42c1d79d1e125a485
+      Type: BaseDataVariableType
+      DataType: FillModeEnum
+      ModellingRule: Optional
+      Value: 1
+    - Name: TopMargin
+      Id: g=1650957379732246eb05cd5c4dda1a45
+      Type: BaseVariableType
+      DataType: Size
+      Value: 50.0
+      Children:
+      - Name: SpindleFrontPosition1
+        Id: g=959e041b1262701d39d0ff763dcb4a57
+        Type: SpindleFrontPosition
+        Children:
+        - Name: Source
+          Id: g=e8990ca12c1a0e18422a88f0e9ca0a1f
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=ff48f2bae85e6ae310a2356b72084425
+            Type: DataBind
+            DataType: NodePath
+            Value: "{Spindle}/Configuration/Active"
+            Children:
+            - Name: Mode
+              Id: g=bb108fdc3d395ce92cae785f8ab496b5
+              Type: BaseVariableType
+              DataType: DataBindModeType
+              ModellingRule: Optional
+              Value: 2
+      - Name: AnimationOnBehaviour
+        Id: g=3bedae80cd0be337de187b8fafeb58bf
+        Type: BehaviourAnimation
+        ReferenceType: HasAnimation
+        Children:
+        - Name: Duration
+          Id: g=fd9730944c879b740b6f4d5c42264de9
+          Type: BaseDataVariableType
+          DataType: Int32
+          ModellingRule: Optional
+          Value: 250
+        - Name: EasingCurve
+          Id: g=68ed8b3ef954cbeae8f0ada6a8b7adc3
+          Type: BaseDataVariableType
+          DataType: EasingCurveEnum
+          ModellingRule: Optional
+          Value: 3
+    - Name: HorizontalAlignment
+      Id: g=3326211e0a9287dc4c134dc6fb6d156b
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+  - Name: ChassisBG
+    Id: g=5c81a9227b2d2a162c285a8aa23c7024
+    Type: Image
+    Children:
+    - Name: Path
+      Id: g=9b94c6b7c6cfba9f960f651a93023d63
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: ""
+      Children:
+      - Name: KeyValueConverter1
+        Id: g=d1b1eea60b6ad5d3f67d47624b7d00df
+        Type: ValueMapConverter
+        Children:
+        - Name: Source
+          Id: g=21e21196fd48dd85a8422d9fbdccf0d4
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=6e4c97d826b8886319a0ffc14fd798e6
+            Type: DataBind
+            DataType: NodePath
+            Value: "{Spindle}/Process/Status"
+            Children:
+            - Name: Mode
+              Id: g=0165aae290be0d47da35314073fa2f44
+              Type: BaseVariableType
+              DataType: DataBindModeType
+              ModellingRule: Optional
+              Value: 2
+        - Name: Pairs
+          Id: g=b1ed11dcab48d1af98f07b6fc0eb917d
+          Type: BaseObjectType
+          ModellingRule: None
+          Children:
+          - Name: Pair
+            Id: g=4974447cb5db130db0b4def218a42f7f
+            Type: ValueMapPair
+            Children:
+            - Name: Key
+              Id: g=5c0af62cadfaa143b47bc2cd3cdced6d
+              Type: BaseDataVariableType
+              DataType: String
+              Value: ""
+            - Name: Value
+              Id: g=5f7c6936672cecf7de641974d700324a
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              Value: "ns=29;%PROJECTDIR%/ASEM_Breton_HeadChassis_Full_Grey.png"
+          - Name: Pair1
+            Id: g=2ace6285b912d06afc4927c6e1bbb7ef
+            Type: ValueMapPair
+            Children:
+            - Name: Key
+              Id: g=c61fd9a11116e8d2c14d8b8d905b4e91
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "ERROR"
+            - Name: Value
+              Id: g=2184b26ec388d5c51071348f34f16c10
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              Value: "ns=29;%PROJECTDIR%/ASEM_Breton_HeadChassis_Full_Red.png"
+          - Name: Pair2
+            Id: g=b665243a6bba63612da9f2f2a0c499c2
+            Type: ValueMapPair
+            Children:
+            - Name: Key
+              Id: g=8f75a4e003e972153394aec7047ec744
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "ACTIVE"
+            - Name: Value
+              Id: g=283c1c4da9df003432262ba7a7cf25e5
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              Value: "ns=29;%PROJECTDIR%/ASEM_Breton_HeadChassis_Full_Green.png"
+    - Name: FillMode
+      Id: g=8a84cbe723b3451328c5726fc34e8d1c
+      Type: BaseDataVariableType
+      DataType: FillModeEnum
+      ModellingRule: Optional
+      Value: 1
+    - Name: HorizontalAlignment
+      Id: g=5b32fd464b5de2ce2fd4f86d64a0b89c
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+  - Name: PressureLabel
+    Id: g=6ee19149cfa3002146e382d5d7fc9c35
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=5c586a7fbd8815e75d3b577c02ba246c
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: StringFormatter1
+        Id: g=3a7427b708c978f28067d4931819b761
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Id: g=19dcdc9f97197e8f121dc6010c8496da
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"{0:f1}"}
+        - Name: ns=5;Source0
+          Id: g=3352005f4650d9bdf906801f440feaa4
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=4b7edbeaadcba93d2bbb36e4f32d13d9
+            Type: DataBind
+            DataType: NodePath
+            Value: "{Spindle}/Process/Pressure"
+        - Name: Mode
+          Id: g=3e31a55a21fcd4b635af82d744f30c0f
+          Type: PropertyType
+          DataType: DataBindModeType
+          ReferenceType: HasComponent
+          Value: 0
+    - Name: TopMargin
+      Id: g=e89c0db4ebe56048c422bdf5a0dbe7cb
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 62.0
+    - Name: VerticalAlignment
+      Id: g=1f639aa42f050ebe2569530ef89b82d6
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 0
+    - Name: HorizontalAlignment
+      Id: g=e4c725e39acfebdd260e67e540a6b51f
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: TextHorizontalAlignment
+      Id: g=48644a2079e8644d92e9829adf2e9c38
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: Width
+      Id: g=f5905493430d2a698e57986fa0b3ed09
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: FontWeight
+      Id: g=122193674585da5d3c3262918f92c88a
+      Type: BaseDataVariableType
+      DataType: FontWeightEnum
+      ModellingRule: Optional
+      Value: 700
+    - Name: FontSize
+      Id: g=477ad7ef9b2c452936fb569625c90e9f
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 18.0
+  - Name: Label1
+    Id: g=8d689e19dc9b7d33dea72371b6188a54
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=a8a636c1f28ea5b6b9b3b2188ba6a549
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Id: g=db8322e51762e87f35feb9d97bd09dc8
+        Type: DataBind
+        DataType: NodePath
+        Value: "{Spindle}/ID"
+    - Name: HorizontalAlignment
+      Id: g=036e9343202676297b19c4601a9487ea
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: TopMargin
+      Id: g=2a341556b23f93ff1de60f536c308d5b
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TextColor
+      Id: g=7f99fb0f848e82ffb043320bd3a0e9bf
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#d7d5d5"
+    - Name: FontSize
+      Id: g=c8d4243af2d64e03df91d6473371793b
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 16.0
+    - Name: FontFamily
+      Id: g=81f0d5db8393bc295bb2919811232b28
+      Type: BaseDataVariableType
+      DataType: Font
+      ModellingRule: Optional
+      Value: "Lato Black"
+  - Name: Width
+    Id: g=b9c7b0d12b72a983d1b28732f72616f9
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 52.0
+- Name: SpindleTop
+  Id: g=a03cdbf1c1e39437baa822836c55f757
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Id: g=a3dde22ea04a515d93de10f0676b4495
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 52.0
+  - Name: Height
+    Id: g=5f473122ec95d730440fd91f39b908a5
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 85.0
+  - Name: HeaderTopBG
+    Id: g=7519a90ffa612550badfbd89094647af
+    Type: Image
+    Children:
+    - Name: Path
+      Id: g=1d6cfebe01b5706384b8936379644b06
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: ""
+      Children:
+      - Name: KeyValueConverter1
+        Id: g=2c2755fc17dfd1df4c7f0835e1e8db4b
+        Type: ValueMapConverter
+        Children:
+        - Name: Source
+          Id: g=daeb1e0deed1ae3598865a3942dfd7ef
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=46b0c05a3eaa26ca89b5ef033f436a1b
+            Type: DataBind
+            DataType: NodePath
+            Value: "{Spindle}/Process/Status"
+            Children:
+            - Name: Mode
+              Id: g=164751f701e37640ada6b24d27fe2b29
+              Type: BaseVariableType
+              DataType: DataBindModeType
+              ModellingRule: Optional
+              Value: 2
+        - Name: Pairs
+          Id: g=09cd9ab91c18a555ba2545267bbe974c
+          Type: BaseObjectType
+          ModellingRule: None
+          Children:
+          - Name: Pair
+            Id: g=e273a0d29fcb9568c8ba20bde1a6fde7
+            Type: ValueMapPair
+            Children:
+            - Name: Key
+              Id: g=b4b87a2b5b864b1659f29facbf7ee09b
+              Type: BaseDataVariableType
+              DataType: String
+              Value: ""
+            - Name: Value
+              Id: g=2d4761651baf4f0d3bc25cbc1ae3ff68
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              Value: "ns=29;%PROJECTDIR%/ASEM_Breton_HeadTop_Full_Grey.png"
+          - Name: Pair1
+            Id: g=789ff6d08ec278ea59c75253616fcf42
+            Type: ValueMapPair
+            Children:
+            - Name: Key
+              Id: g=2a324b47f4f5dabb5f711f5e0ab575b0
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "ERROR"
+            - Name: Value
+              Id: g=24a5fce6d2137322f436a06242f946e2
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              Value: "ns=29;%PROJECTDIR%/ASEM_Breton_HeadTop_Full_Red.png"
+          - Name: Pair2
+            Id: g=27e727dc63d03dd91d8c7e84c592cf49
+            Type: ValueMapPair
+            Children:
+            - Name: Key
+              Id: g=229f677c232681a24b732c1aebfa04b7
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "ACTIVE"
+            - Name: Value
+              Id: g=f44dd5353337ae396baf50ccc87a0666
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              Value: "ns=29;%PROJECTDIR%/ASEM_Breton_HeadTop_Full_Green.png"
+    - Name: FillMode
+      Id: g=039301004711d0652e01747cf23d3732
+      Type: BaseDataVariableType
+      DataType: FillModeEnum
+      ModellingRule: Optional
+      Value: 1
+    - Name: HorizontalAlignment
+      Id: g=a4818c1d3627ff1c0bddf723e1a9a773
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+  - Name: Spindle
+    Id: g=92de442150bb66f1f5699492e154cb88
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=9423e1e7db59279aca8e415e154792dd
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"ccd2bf1857c471d11c7e8571180a45b3","Namespace":29}
+  - Name: Label1
+    Id: g=3064f39856f2379a4ef19c818dda962a
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=2c2f937709217741d60a7750bbae543a
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: StringFormatter1
+        Id: g=054c063060d33d4e72a252017bbe33f0
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Id: g=cc429ddb973ddad2995a47e73e1bcee4
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"{0:f1}"}
+        - Name: ns=5;Source0
+          Id: g=d14606aa69b0f12bf1c7898fe3634b32
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=52bb476646ed630e29f57c413c8cbab3
+            Type: DataBind
+            DataType: NodePath
+            Value: "{Spindle}/Process/AbrasiveLevel"
+        - Name: Mode
+          Id: g=17b7b33fffd7240107b3cfcc25728dee
+          Type: PropertyType
+          DataType: DataBindModeType
+          ReferenceType: HasComponent
+          Value: 0
+    - Name: HorizontalAlignment
+      Id: g=f077c34f8f6832955176c2c3f8c89d81
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: TopMargin
+      Id: g=ac04e0b594cf0e2e3c82a77a17951d69
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: FontSize
+      Id: g=4e64ce16df848a453a42ee786adbf55a
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 18.0
+    - Name: FontItalic
+      Id: g=454456b7bde2b5aee7894fbd564a7d8b
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: false
+    - Name: FontWeight
+      Id: g=c5b4fa7598cbb60a7870e08eb54570c5
+      Type: BaseDataVariableType
+      DataType: FontWeightEnum
+      ModellingRule: Optional
+      Value: 700
+- Name: SpindleInput
+  Id: g=6469e8b7f3b6a2708a9e41042b98c743
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Id: g=a498cb4709ae96eb5a2bdb931c74cdb0
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 52.0
+  - Name: Height
+    Id: g=131b8e7db3a2c0247dbd555788685371
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 90.0
+  - Name: Background
+    Id: g=ea64ee821bd21618af6a47ea786923b3
+    Type: Rectangle
+    Children:
+    - Name: Width
+      Id: g=0ea5bec2d001c449cfd1de20b8b1d2db
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: Height
+      Id: g=4e88ca54269e561562c686b2b32e66ec
+      Type: BaseVariableType
+      DataType: Size
+      Value: 60.0
+    - Name: BorderThickness
+      Id: g=d0b9868743070051c100b9f8fe19ab6a
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 2.0
+    - Name: HorizontalAlignment
+      Id: g=c585784ea9734d92790ba602938a4399
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: VerticalAlignment
+      Id: g=75aeabfd187331347f024bc7da7140a8
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: BorderColor
+      Id: g=23c95aef38ad6b27c6f832ac0daf7acb
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#bebebe"
+    - Name: FillColor
+      Id: g=a8c5b860df9e7ee7bed7baea1df53f5c
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#e4e4e4"
+    - Name: Level
+      Id: g=b61f66461e2d60ee45b5dd1958b0bc36
+      Type: Rectangle
+      Children:
+      - Name: Width
+        Id: g=afd9c248e2f54b88efe6daa54c17ba18
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
+      - Name: HorizontalAlignment
+        Id: g=1368ecf0e1469bbb411cf6591ba64d95
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: VerticalAlignment
+        Id: g=04c76b98fc926b2957ad83c2e5a9c257
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: FillColor
+        Id: g=83227af4de78a8392c9b6a66026781c3
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#8cc63f"
+      - Name: LeftMargin
+        Id: g=9671b4935a127e370e6e5413897deae4
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 2.0
+      - Name: RightMargin
+        Id: g=89991fc7a21722ed1ce198c4cc9de255
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 2.0
+      - Name: Height
+        Id: g=29ad45d7266f730c27b1c5ca9090743d
+        Type: BaseVariableType
+        DataType: Size
+        Value: -1.0
+        Children:
+        - Name: AnimationOnBehaviour
+          Id: g=87306001d087528a9cc72a0f9b399e10
+          Type: BehaviourAnimation
+          ReferenceType: HasAnimation
+          Children:
+          - Name: Duration
+            Id: g=41b1a185f246f7dd2d7de004cf1ad74f
+            Type: BaseDataVariableType
+            DataType: Int32
+            ModellingRule: Optional
+            Value: 250
+        - Name: InputInsogramHeight1
+          Id: g=e9cfda34d3e216ceb3bf6998ecd0e23a
+          Type: InputInsogramHeight
+          Children:
+          - Name: Source
+            Id: g=f9f01e3ac27fe18f10cebfbfc964b23c
+            Type: BaseDataVariableType
+            DataType: Number
+            ReferenceType: HasSource
+            Value: {"Type":11,"Body":0.0}
+            Children:
+            - Name: DynamicLink
+              Id: g=0624249295292d764a7af6b77caeca75
+              Type: DataBind
+              DataType: NodePath
+              Value: "{Spindle}/Process/Input"
+              Children:
+              - Name: Mode
+                Id: g=7bdbfbecd594b1b8d4fa0e6db7c00729
+                Type: BaseVariableType
+                DataType: DataBindModeType
+                ModellingRule: Optional
+                Value: 2
+  - Name: Spindle
+    Id: g=67a331b0411a83d2622b75e0d03dc5c6
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=17c63d718f6d5342dd295c48b2783f2a
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"ccd2bf1857c471d11c7e8571180a45b3","Namespace":29}
+  - Name: Label1
+    Id: g=c1ebb27228998134595e14d39bd5d52e
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=ab6dd8400ab87b581d2040897196fabf
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: StringFormatter1
+        Id: g=7ea9e9ec1dbb58911e33f47c8735f063
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Id: g=0c463c357a2ce6cdcee0401cf2d04643
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"{0:f1}"}
+        - Name: ns=5;Source0
+          Id: g=ffed67b1aa7ee1fd863221dff37c45a3
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=9f78190c133474e8c5724a0a90cf6fb3
+            Type: DataBind
+            DataType: NodePath
+            Value: "{Spindle}/Process/Input"
+        - Name: Mode
+          Id: g=78ad7e0e8a36d9def459ac3d58e2c03e
+          Type: PropertyType
+          DataType: DataBindModeType
+          ReferenceType: HasComponent
+          Value: 0
+    - Name: HorizontalAlignment
+      Id: g=a4f768092638214349e70160667aa83c
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: FontSize
+      Id: g=3fd86a50f819a719a08c70a825dfa743
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 18.0
+    - Name: FontWeight
+      Id: g=865c252ef5ee47f8213ec00209120186
+      Type: BaseDataVariableType
+      DataType: FontWeightEnum
+      ModellingRule: Optional
+      Value: 700

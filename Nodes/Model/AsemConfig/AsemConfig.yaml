@@ -1,0 +1,39 @@
+Name: AsemConfig
+Id: g=7e44e481c272f80af8f3d4e4a30f6cbf
+Type: FolderType
+Children:
+- Name: TrendRefreshTime
+  Id: g=12baeb968567be9e97031a3fd01ee908
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 300
+  Children:
+  - Name: ns=0;EURange
+    Id: g=db56ec2502f82d149a4392b979594510
+    Type: RangeType
+    DataType: EURange
+    Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+    Children:
+    - Name: Low
+      Id: g=045ad4c163fd572bc8c97a5dd4dbdde2
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 200.0
+    - Name: High
+      Id: g=b5dfdf919a74f2be40abcb85a1a0ca47
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 5000.0
+    - Name: Constrain
+      Id: g=9afe2b600e492f6daddaaf1244168bf4
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
+- Name: ReadOnly
+  Id: g=66b094a179be9ad296562dcb0687d7fa
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false

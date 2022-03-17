@@ -1,0 +1,85 @@
+Name: Users
+Id: g=b3c4b088edaa41b9a7c80e3bf52f6216
+Type: FolderType
+Children:
+- Name: Alice
+  Id: g=a2295bc3e71ececad1a4f7a19cd3a4a2
+  Type: UserType
+  Children:
+  - Name: LocaleIds
+    Id: g=3075242c76bfe6db0209f4d78c2b7724
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["it-IT"]
+- Name: John
+  Id: g=8e008abc7d924a1925df9542cf319b83
+  Type: UserType
+  Children:
+  - Name: LocaleIds
+    Id: g=7366b45a32206203f03a2d6c1fc6112f
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+- Name: admin
+  Id: g=06ebd3539e8a875fa93e3292e01ca2f8
+  Type: UserType
+  Children:
+  - Name: LocaleIds
+    Id: g=fa43969b421b4541f5617b71c21e231d
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+  - Name: Password
+    Id: g=82d939b10f976d474d9a2c9fde5b90ba
+    Type: BaseVariableType
+    DataType: Password
+    ReferenceType: HasProperty
+    Value: "admin"
+  - Class: Reference
+    Type: HasGroup
+    Target: g=64a5c3afc7ac55a9714efa6c50bc921c
+- Name: translator
+  Id: g=3b8cbc30ac266eb7585d8346b1cfb5d2
+  Type: UserType
+  Children:
+  - Name: LocaleIds
+    Id: g=7cd317625e42b0d72b915d8f737bc621
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+  - Class: Reference
+    Type: HasGroup
+    Target: g=391e5a6c1502daaf0609d3729a7b05d5
+- Name: Asem
+  Id: g=62be12aa3650369e3a769184b3844c34
+  Type: UserType
+  Children:
+  - Name: LocaleIds
+    Id: g=29e7fe0cd99492dd0fe9cf7b00bc3eca
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+  - Name: Password
+    Id: g=955f226d441c2692114566f08a79f9f4
+    Type: BaseVariableType
+    DataType: Password
+    ReferenceType: HasProperty
+    Value: "Asemasem1"
+  - Class: Reference
+    Type: HasGroup
+    Target: g=904a0b69f7a296c7d35a3d936919233f

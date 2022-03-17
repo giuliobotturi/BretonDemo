@@ -1,0 +1,119 @@
+Project:
+ Name: BretonDemo
+ ProjectNamespaceIndex: 29
+ Description: ''
+ Company: ''
+ Copyright: ''
+ FormatVersion: 1
+ CoreVersion: 8.0.0.55
+ Dependencies:
+  2:
+   Uri: 'urn:QPlatform:Core:Net'
+   Module: QPlatform.Core.Net
+   Version: 6.2.1.95
+  3:
+   Uri: 'urn:QPlatform:OPCUAServer'
+   Module: QPlatform.OPCUAServer
+   Version: 5.1.24.95
+  4:
+   Uri: 'urn:QPlatform:OPCUAServer:Net'
+   Module: QPlatform.OPCUAServer.Net
+   Version: 3.1.24.95
+  5:
+   Uri: 'urn:QPlatform:CoreBase'
+   Module: QPlatform.CoreBase
+   Version: 8.0.5.95
+  6:
+   Uri: 'urn:QPlatform:CoreBase:Net'
+   Module: QPlatform.CoreBase.Net
+   Version: 5.0.5.95
+  7:
+   Uri: 'urn:QPlatform:UI'
+   Module: QPlatform.UI
+   Version: 43.3.0.32
+  8:
+   Uri: 'urn:QPlatform:UI:Net'
+   Module: QPlatform.UI.Net
+   Version: 31.4.0.32
+  9:
+   Uri: 'urn:QPlatform:Report'
+   Module: QPlatform.Report
+   Version: 3.0.8.95
+  10:
+   Uri: 'urn:QPlatform:Report:Net'
+   Module: QPlatform.Report.Net
+   Version: 3.0.8.95
+  11:
+   Uri: 'urn:QPlatform:HMIProject'
+   Module: QPlatform.HMIProject
+   Version: 10.1.4.95
+  12:
+   Uri: 'urn:QPlatform:HMIProject:Net'
+   Module: QPlatform.HMIProject.Net
+   Version: 6.1.4.95
+  13:
+   Uri: 'urn:QPlatform:EventLogger'
+   Module: QPlatform.EventLogger
+   Version: 7.0.13.95
+  14:
+   Uri: 'urn:QPlatform:EventLogger:Net'
+   Module: QPlatform.EventLogger.Net
+   Version: 6.0.13.95
+  15:
+   Uri: 'urn:QPlatform:Recipe'
+   Module: QPlatform.Recipe
+   Version: 1.3.12.95
+  16:
+   Uri: 'urn:QPlatform:Recipe:Net'
+   Module: QPlatform.Recipe.Net
+   Version: 1.2.12.95
+  17:
+   Uri: 'urn:QPlatform:NativeUI'
+   Module: QPlatform.NativeUI
+   Version: 26.3.0.32
+  18:
+   Uri: 'urn:QPlatform:NativeUI:Net'
+   Module: QPlatform.NativeUI.Net
+   Version: 2.0.8.95
+  19:
+   Uri: 'urn:QPlatform:Store'
+   Module: QPlatform.Store
+   Version: 2.1.24.95
+  20:
+   Uri: 'urn:QPlatform:Store:Net'
+   Module: QPlatform.Store.Net
+   Version: 3.0.24.95
+  21:
+   Uri: 'urn:QPlatform:SQLiteStore'
+   Module: QPlatform.SQLiteStore
+   Version: 2.1.14.95
+  22:
+   Uri: 'urn:QPlatform:SQLiteStore:Net'
+   Module: QPlatform.SQLiteStore.Net
+   Version: 2.1.14.95
+  23:
+   Uri: 'urn:QPlatform:Alarm'
+   Module: QPlatform.Alarm
+   Version: 7.0.8.95
+  24:
+   Uri: 'urn:QPlatform:Alarm:Net'
+   Module: QPlatform.Alarm.Net
+   Version: 3.0.24.95
+  25:
+   Uri: 'urn:QPlatform:NetLogic'
+   Module: QPlatform.NetLogic
+   Version: 5.0.5.95
+  26:
+   Uri: 'urn:QPlatform:Retentivity'
+   Module: QPlatform.Retentivity
+   Version: 3.0.57.95
+  27:
+   Uri: 'urn:QPlatform:Retentivity:Net'
+   Module: QPlatform.Retentivity.Net
+   Version: 2.0.57.95
+  28:
+   Uri: 'urn:QPlatform:WebUI'
+   Module: QPlatform.WebUI
+   Version: 3.0.1.95
+ Nodes:
+ - File: Nodes/BretonDemo.yaml

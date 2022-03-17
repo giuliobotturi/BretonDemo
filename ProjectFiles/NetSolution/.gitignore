@@ -1,0 +1,7 @@
+bin/
+obj/
+private/
+.vs/
+*-workspace
+*.csproj
+*.sln

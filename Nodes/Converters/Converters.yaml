@@ -1,0 +1,324 @@
+Name: Converters
+Id: g=7fb8b376bf2dedd5059fd8eaeb474ef7
+Type: FolderType
+Children:
+- Name: SpindleFrontPosition
+  Id: g=88d96df172b8a3a5a4f97189db17c8c2
+  Supertype: ValueMapConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Pairs
+    Id: g=063e238aeec34006a1379bce532d5001
+    Type: BaseObjectType
+    ModellingRule: None
+    Children:
+    - Name: Pair
+      Id: g=9958a56ec8d6a9074a5d2066e3473f1e
+      Type: ValueMapPair
+      Children:
+      - Name: Key
+        Id: g=a18a4adfb8979216489bde9caf397809
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+      - Name: Value
+        Id: g=5769c428368047a6b522414cf7cb212d
+        Type: BaseDataVariableType
+        DataType: Float
+        Value: 50.0
+    - Name: Pair1
+      Id: g=43d2a25a72a62a8d69e69dfdf4839a6e
+      Type: ValueMapPair
+      Children:
+      - Name: Key
+        Id: g=f2b5bb4e0f3aef186e009ed809f65227
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+      - Name: Value
+        Id: g=8e26bbf0be0876699c107ee5ac467a9a
+        Type: BaseDataVariableType
+        DataType: Float
+        Value: 92.0
+- Name: ColorMap
+  Id: g=e1a7c037dfe118b9c58ae33a3d8ce3f4
+  Supertype: ValueMapConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Pairs
+    Id: g=7140e7c1b97099ba9d2ede90d464d0cc
+    Type: BaseObjectType
+    ModellingRule: None
+    Children:
+    - Name: Pair
+      Id: g=934febd8d16c0b8e21cd72683ca1065d
+      Type: ValueMapPair
+      Children:
+      - Name: Key
+        Id: g=6631735edc6548c46a2c055b7b80c1ac
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
+      - Name: Value
+        Id: g=6a7ef2df7696a230a9af9fac355ccb3f
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#00000000"
+    - Name: Pair1
+      Id: g=0bd96d776c3dcc90cb2f686674d248f0
+      Type: ValueMapPair
+      Children:
+      - Name: Key
+        Id: g=813b23af7272bde7cfa0704986267abb
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ERROR"
+      - Name: Value
+        Id: g=73b12eb0ce4f05674f1dd0b6460f00db
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ff0000"
+    - Name: Pair2
+      Id: g=78b09009d1965093d07ceeaba5ce7e47
+      Type: ValueMapPair
+      Children:
+      - Name: Key
+        Id: g=7cbe7b4c86000969357e3d7fe1886c6e
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ACTIVE"
+      - Name: Value
+        Id: g=1bb94732d7d74346ea2343f7d0d84580
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#8cc63f"
+- Name: SpindleStatus
+  Id: g=5b9460ae4951cbc253ace69d3067160f
+  Supertype: ValueMapConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Pairs
+    Id: g=be5f0e1934fe68ba95522f89079d18c3
+    Type: BaseObjectType
+    ModellingRule: None
+    Children:
+    - Name: Pair
+      Id: g=c4d50d7819b8a52e27d1186ae46accf3
+      Type: ValueMapPair
+      Children:
+      - Name: Key
+        Id: g=1bcf546c599bed0ea3a889dd28ee6907
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 0
+      - Name: Value
+        Id: g=9058482f280d3439cc35602b64ebb120
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
+    - Name: Pair1
+      Id: g=d405d2a3b2b8030ccbec350c8eefcfb6
+      Type: ValueMapPair
+      Children:
+      - Name: Key
+        Id: g=b6a98c4a24242fb42be5b456c674f4a6
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1
+      - Name: Value
+        Id: g=83db23cce98202e569a8c0487f9c5ea3
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ERROR"
+    - Name: Pair2
+      Id: g=209185f7bd8429c888ba1d3fb7e8a602
+      Type: ValueMapPair
+      Children:
+      - Name: Key
+        Id: g=9fd3a636523157e677fe59bf1cb62667
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 2
+      - Name: Value
+        Id: g=100d7422ab3b66c7259d0ca12b36190e
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ACTIVE"
+    - Name: Pair3
+      Id: g=fef8975c8f9ca50a5ee4e873c2ca08dc
+      Type: ValueMapPair
+      Children:
+      - Name: Key
+        Id: g=b45abfe54ed31ef55cc0ee2c961fdbfb
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 3
+      - Name: Value
+        Id: g=be9310ebe8b78ec31c4471ad86ae6566
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ACTIVE"
+- Name: InputColorConverter
+  Id: g=c75fc8adcb77e06bbec8b49584bf4fa8
+  Supertype: ValueMapConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Pairs
+    Id: g=2fab971203a5f0337e15ec2463e33d6e
+    Type: BaseObjectType
+    ModellingRule: None
+    Children:
+    - Name: Pair
+      Id: g=a6651762ad0f7bf344ec4dda6484eccb
+      Type: ValueMapPair
+      Children:
+      - Name: Key
+        Id: g=695a061d9c2b1b63118ef081c21ee0f2
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 0
+      - Name: Value
+        Id: g=038af3195695cc2f504a3e5b0ce360e0
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
+- Name: ShowPasswordIconMap
+  Id: g=0cf99d9dc812e09f3783ec7cbb062d4b
+  Supertype: ValueMapConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Pairs
+    Id: g=4c9f7e6b09177cf4c0f7a8c281ddfbea
+    Type: BaseObjectType
+    ModellingRule: None
+    Children:
+    - Name: Pair
+      Id: g=f67beb2c5fdbbc14ee98d66e8c1bba28
+      Type: ValueMapPair
+      Children:
+      - Name: Key
+        Id: g=c6376e032b6ade3ec61d05841bd1bad3
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+      - Name: Value
+        Id: g=21d80136e90636aee32982beb889acd3
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=29;%PROJECTDIR%/View.svg"
+    - Name: Pair1
+      Id: g=26f5d15655996111633ac9a27ce7e98c
+      Type: ValueMapPair
+      Children:
+      - Name: Key
+        Id: g=f1f47928c6c33647ee70f0de7c906d3e
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+      - Name: Value
+        Id: g=6f14397e741aa9878d314393acfd5004
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=29;%PROJECTDIR%/Hide.svg"
+- Name: InputInsogramHeight
+  Id: g=10d6626f0d2837184386cdec568c0d2d
+  Supertype: EUConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Source
+    Id: g=f69fa8360088e4e25a84f7970371b0dc
+    Type: BaseDataVariableType
+    DataType: Number
+    ReferenceType: HasSource
+    Value: {"Type":11,"Body":0.0}
+  - Name: RawMin
+    Id: g=4581a0b845c00d4e82cf1a200a863345
+    Type: BaseDataVariableType
+    DataType: Double
+    ReferenceType: HasParameter
+    ModellingRule: Optional
+    Value: 0.0
+  - Name: RawMax
+    Id: g=04e469cfa6eadd5c024d2944af323bea
+    Type: BaseDataVariableType
+    DataType: Double
+    ReferenceType: HasParameter
+    ModellingRule: Optional
+    Value: 30.0
+  - Name: ScaledMin
+    Id: g=eedd9d7ac3d773ffb33b7e196895702d
+    Type: BaseDataVariableType
+    DataType: Double
+    ReferenceType: HasParameter
+    ModellingRule: Optional
+    Value: 0.0
+  - Name: ScaledMax
+    Id: g=b1d5fa75be698deeeada4848714a8565
+    Type: BaseDataVariableType
+    DataType: Double
+    ReferenceType: HasParameter
+    ModellingRule: Optional
+    Value: 60.0
+- Name: StateToImageMap
+  Id: g=16e35b2a3820e6580f402af0995ea7c5
+  Supertype: ValueMapConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Pairs
+    Id: g=01a8441c4bb18c363161a3d0d9c9f5fc
+    Type: BaseObjectType
+    ModellingRule: None
+    Children:
+    - Name: Pair
+      Id: g=a40dfbcb1edffeb3e67fde75ec57404d
+      Type: ValueMapPair
+      Children:
+      - Name: Key
+        Id: g=b44e51e6a3106f073df1ead053e5aaed
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+      - Name: Value
+        Id: g=0a64167e238a342337aeb871d4fde268
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=29;%PROJECTDIR%/ActiveStatusDarkEmpty.svg"
+    - Name: Pair1
+      Id: g=315b6ba630df9065ef448a88a7cfe044
+      Type: ValueMapPair
+      Children:
+      - Name: Key
+        Id: g=6e002f0e151cdca134087175e3a167ec
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+      - Name: Value
+        Id: g=de6c1473e18a3baccff7e6fe2c812539
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=29;%PROJECTDIR%/ActiveStatusDark.svg"
+- Name: SlabConverter
+  Id: g=616d2a9f04fe0a380eb89877bf1997c8
+  Supertype: LinearConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Source
+    Id: g=848a75d958eeb3d74c5b32a5cdd771fd
+    Type: BaseDataVariableType
+    DataType: Number
+    ReferenceType: HasSource
+    Value: {"Type":11,"Body":0.0}
+  - Name: Slope
+    Id: g=6bdada8b51e76b6b3a670669fd034ec4
+    Type: BaseDataVariableType
+    DataType: Double
+    ReferenceType: HasParameter
+    ModellingRule: Optional
+    Value: 10.0
+  - Name: Intercept
+    Id: g=72c315b7c36fd712570498f4d03bcc37
+    Type: BaseDataVariableType
+    DataType: Double
+    ReferenceType: HasParameter
+    ModellingRule: Optional
+    Value: 5.0

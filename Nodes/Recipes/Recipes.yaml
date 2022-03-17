@@ -1,0 +1,219 @@
+Name: Recipes
+Id: g=be01dfd007bbfbb54696fed0d9db5c44
+Type: FolderType
+Children:
+- Name: StyleSheetRecipeSchema
+  Id: g=dd44c5ccb3e53ab6ece36890e354df2a
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Id: g=1888d084d1a5185274e11913a101130d
+    Type: BaseObjectType
+    Children:
+    - Name: FontPixelSize
+      Id: g=a86ba504699ec80faa05d6d90e70d6d6
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+    - Name: AccentColor
+      Id: g=544b5bbbc6d73a52db4fa109f567a4d5
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#00000000"
+    - Name: AccentTextColor
+      Id: g=9af529dc9752d789a4ec70dd5afbf598
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#00000000"
+    - Name: DataInputBackgroundColor
+      Id: g=1e5642f8a4c8f0c01e8ccb615c5f644c
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#00000000"
+    - Name: TextColor
+      Id: g=9412566ec8ddf61254ee15a2cd7c2c94
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#00000000"
+    - Name: BorderColor
+      Id: g=a28573514b7831548f436f7451898540
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#00000000"
+    - Name: DataInputTextColor
+      Id: g=d568f489dc7255ab711047758dbc6bba
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#00000000"
+    - Name: FontItalic
+      Id: g=3894d0748e77516a03aaa40cd030e83e
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: FullScreen
+      Id: g=e3ed328674b3443b18546eb27b5c194e
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: FontFamily
+      Id: g=2d44550e780d03a260104f3194315148
+      Type: BaseDataVariableType
+      DataType: Font
+      Value: ""
+    - Name: WindowColor
+      Id: g=24e4696b6941922de4fc9a0f65c3a7ba
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#00000000"
+    - Name: HeaderBackgroundColor
+      Id: g=f8f9a9c2424edf2e4947b478a259e91d
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#00000000"
+    - Name: ChartStyle
+      Id: g=7a873e6710e2801556713ead7aa9b0de
+      Type: BaseObjectType
+      Children:
+      - Name: BackgroundColor
+        Id: g=3da7ffa3e73d9254644bfb208f8fafa6
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#00000000"
+      - Name: GridColor
+        Id: g=42c1b3fed6e28d2f3f0fe9e26c3aef06
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#00000000"
+  - Name: Store
+    Id: g=a348473d7b7fe6125b8ef2c2aae28649
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"573b6963b7d997f50be96c1112f0206c","Namespace":29}
+    Children:
+    - Name: Kind
+      Id: g=457a9daed763f5e7c8ce04acffb7976a
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":19}
+  - Name: TargetNode
+    Id: g=1666d38bf6b0d52fe6fe07178651aab5
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"bb7a6a25117cdc29840e3eb8f3a7f1d6","Namespace":29}
+    Children:
+    - Name: Kind
+      Id: g=be0ab2292450f319f4f82ed66e8f51eb
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: EditModel
+    Id: g=fc8c790bb22c7c8fd541ebfd928d4ba2
+    Type: BaseObjectType
+    Children:
+    - Name: FontPixelSize
+      Id: g=666322241e37bd7acfa1a8da7a1d2c66
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+    - Name: AccentColor
+      Id: g=ed203bdf385a31d7c0e3867957e9950a
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#00000000"
+    - Name: AccentTextColor
+      Id: g=f6607c1a9614263ac901decf6ee69183
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#00000000"
+    - Name: DataInputBackgroundColor
+      Id: g=04ea478bd16cbcc2d0bf827da0a784dd
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#00000000"
+    - Name: TextColor
+      Id: g=8ec42d2f728ff8c030277dba8e8f2ead
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#00000000"
+    - Name: BorderColor
+      Id: g=f8498d17fef8ab257f10bd5f1401879c
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#00000000"
+    - Name: DataInputTextColor
+      Id: g=80898f8ea0ae38e42486578eb6567460
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#00000000"
+    - Name: FontItalic
+      Id: g=0ad9472042dbef421de17fc32753d7d8
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: FullScreen
+      Id: g=a581de9c8f6ce94413eb7ba1189ddf97
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: FontFamily
+      Id: g=fefb785d916b281c0c804fca80123687
+      Type: BaseDataVariableType
+      DataType: Font
+      Value: ""
+    - Name: WindowColor
+      Id: g=49c6016af8f14251a8681033de352b75
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#00000000"
+    - Name: HeaderBackgroundColor
+      Id: g=b10467f2ed10f108d439bfdec757c1a3
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#00000000"
+    - Name: ChartStyle
+      Id: g=d97199651ece002516e694f5fe1be299
+      Type: BaseObjectType
+      Children:
+      - Name: BackgroundColor
+        Id: g=87da2a5f25d8bdf8ed6cef7446c8e1e3
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#00000000"
+      - Name: GridColor
+        Id: g=ffbc9ed58dc87772d5f5236aeaa97d29
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#00000000"
+  - Class: Reference
+    Target: ns=15;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=60
+    Direction: Forward
